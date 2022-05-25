@@ -3,6 +3,11 @@
         <title>Meu primeiros Flask</title>
     </head>
     <body>
-        <h1>Hello Word!!</h1>
+        <h1>Hello {{nome}}</h1> 
+        <h1>Hello Word!! Olá Fabiana, tudo bem?</h1>
+        {% for entrada in entradas %}
+        <h2>{{entrada.titulo}}</h2>
+        <p> {{entrada.texto}}</p>
+        {% endfor %}
     </body>
 </html>
